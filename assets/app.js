@@ -39,24 +39,24 @@ images[8] = 'assets/images/cityHD.jpg';
 
 
 //change img
-function changeImg() {
-    var img = document.getElementById("slide")
-    img.setAttribute("src", images[i]);
-    img.className = "fadeIn";
-    if (i < images.length - 1) {
-        i++;
-    } else {
-        i = 0;
-    }
+// function changeImg() {
+//     var img = document.getElementById("slide")
+//     img.setAttribute("src", images[i]);
+//     img.className = "fadeIn";
+//     if (i < images.length - 1) {
+//         i++;
+//     } else {
+//         i = 0;
+//     }
 
-    setTimeout(function () {
-        img.className = "fadeOut";
-    }, 4000);
+//     setTimeout(function () {
+//         img.className = "fadeOut";
+//     }, 4000);
 
-    setTimeout("changeImg()", time);
-}
+//     setTimeout("changeImg()", time);
+// }
 
-window.onload = changeImg;
+// window.onload = changeImg;
 
 // Calls to FBI crime data API
 var startYear = "2010";
@@ -204,12 +204,6 @@ $(document).on("click", "#search", function (event) {
     fbiCall2();
     fbiCall3();
     getJob();
-
-    // $("#city").val("");
-    // $("#age").val("");
-    // $("#status").val("");
-    // $("#kids").val("");
-    // $('#job').val("");
 
 })
 
